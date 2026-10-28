@@ -1,0 +1,14 @@
+[package]
+name = "cargo-jj-release"
+version = "0.1.0"
+edition = "2024"
+description = "Release a Rust crate from a jj repository: bump the version, stamp CHANGES.md, publish to crates.io, then commit, tag and push with jj."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/faassen/cargo-jj-release"
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.7", features = ["derive"] }
+jiff = "0.2.38"
+semver = "1.0.28"
+toml_edit = "0.25.17"
